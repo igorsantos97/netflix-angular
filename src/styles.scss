@@ -1,6 +1,10 @@
 body {
   background-color: #1b1b1b !important;
   padding-top: 60px;
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+  }
 }
 
 .backdrop {
@@ -11,37 +15,4 @@ body {
   right: 0;
   bottom: 0;
   z-index: 999;
-}
-
-@media (min-width: 576px) {
-  .full-banner {
-    min-height: 256px;
-  }
-}
-
-@media (min-width: 768px) {
-  .full-banner .d-flex {
-    align-items: center;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-  }
-
-  .navbar.bg-dark {
-    background-color: transparent !important;
-    background-image: url("assets/images/header_gradient.png");
-    background-repeat: repeat-x;
-  }
-
-  .full-banner {
-    min-height: 50vh;
-  }
-
-  .full-banner p {
-    color: #999898;
-    max-width: 50vw;
-  }
 }
